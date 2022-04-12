@@ -4,11 +4,11 @@
   "description": "TLGO Automation Test Suite",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -r ./cypress/report/*.json",
+    "pretest": "rm -r ./cypress/report/mochawesome-report/*.json",
     "test": "npm run cypress-test || npm run posttest",
     "cypress-test": "cypress run",
     "posttest": "npm run merge-reports && npm run generate-html-report",
-    "merge-reports": "mochawesome-merge ./cypress/report/*.json > ./report1.json",
+    "merge-reports": "mochawesome-merge ./cypress/report/mochawesome-report/*.json > ./report1.json",
     "generate-html-report": "marge report1.json --reportDir cypress/report"
 
   },
