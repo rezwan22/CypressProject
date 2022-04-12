@@ -21,7 +21,7 @@ describe('all login tests', function () {
         cy.contains('Login Successful')
         //cy.contains('here').click()
         cy.clickLink('here')
-
+        ///
     })
 
     it('login with invalid username', function () {
