@@ -1,0 +1,18 @@
+{
+
+    "watchForFileChanges": false,
+    "defaultCommandTimeout":6000,
+    "chromeWebSecurity": false,
+    "experimentalStudio": true,
+    
+        "reporter": "mochawesome",
+        "projectId": "qz65d7",
+        "reporterOptions": {
+            "charts": true,
+            "overwrite": false,
+            "html": false,
+            "json": true,
+            "reportDir": "cypress/report/mochawesome-report"
+        }
+    }
+

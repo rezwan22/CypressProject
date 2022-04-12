@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-11T17:51:04.089Z",
+    "end": "2022-04-11T17:51:05.225Z",
+    "duration": 1136,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0aed2baa-9acf-471a-a44e-16e08b8e0717",
+      "title": "",
+      "fullFile": "cypress/integration/fileupload.spec.ts",
+      "file": "cypress/integration/fileupload.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa30d666-23d3-4a93-9278-72f685b40216",
+          "title": "file upload tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "file upload demo",
+              "fullTitle": "file upload tests file upload demo",
+              "timedOut": null,
+              "duration": 1075,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://filebin.net/');\ncy.get('[id=\"fileField\"]').attachFile('example.json');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://filebin.net/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: write EPROTO 140564175051992:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://filebin.net/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: write EPROTO 140564175051992:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:52114/__cypress/runner/cypress_runner.js:159318:82\n    at visitFailedByErr (http://localhost:52114/__cypress/runner/cypress_runner.js:158668:12)\n    at http://localhost:52114/__cypress/runner/cypress_runner.js:159317:11\n    at tryCatcher (http://localhost:52114/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52114/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:52114/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:52114/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:52114/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:52114/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:52114/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:52114/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:52114/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:52114/__cypress/tests?p=../../T%2BL%20GO%20V2/Cypress-TLGO/cypress/integration/fileupload.spec.ts:100:12)\n\nFrom Node.js Internals:\n  Error: write EPROTO 140564175051992:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:\n  \n      at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)\n  ",
+                "diff": null
+              },
+              "uuid": "93c85535-1462-4817-be87-918f88c0af04",
+              "parentUUID": "fa30d666-23d3-4a93-9278-72f685b40216",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "93c85535-1462-4817-be87-918f88c0af04"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1075,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

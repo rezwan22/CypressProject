@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-11T17:50:46.961Z",
+    "end": "2022-04-11T17:50:54.317Z",
+    "duration": 7356,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea204cda-0aa1-4729-870b-52f0eddd38dd",
+      "title": "",
+      "fullFile": "cypress/integration/basic.ts",
+      "file": "cypress/integration/basic.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "google test",
+          "fullTitle": "google test",
+          "timedOut": null,
+          "duration": 6165,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://www.google.com/');\ncy.get('[name=\"q\"]')\n    .type('Automation step by step{enter}');",
+          "err": {},
+          "uuid": "6eb1cb09-489a-46fc-adac-fe7cab91033c",
+          "parentUUID": "ea204cda-0aa1-4729-870b-52f0eddd38dd",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "6eb1cb09-489a-46fc-adac-fe7cab91033c"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 6165,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
